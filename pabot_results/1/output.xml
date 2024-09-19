@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:50.740356" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment10" source="E:\Assignment\Assignment10.robot">
+<test id="s1-s1-t1" name="Create Fruit List Test Case" line="5">
+<kw name="Create Fruit List">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T09:40:51.090278" level="INFO">${fruits} = ['apple', 'banana', 'cherry']</msg>
+<var>${fruits}</var>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.089301" elapsed="0.000977"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-19T09:40:51.091254" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${fruits}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.090278" elapsed="0.000976"/>
+</kw>
+<msg time="2024-09-19T09:40:51.091254" level="INFO">@{my_fruits} = [ apple | banana | cherry ]</msg>
+<var>@{my_fruits}</var>
+<status status="PASS" start="2024-09-19T09:40:51.088325" elapsed="0.002929"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_fruits[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.091254" elapsed="0.000975"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:51.086372" elapsed="0.006833"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:50.781350" elapsed="0.311855"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:50.755972" elapsed="0.338210"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment10">Assignment.Assignment10</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:50.734500" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

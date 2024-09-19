@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:55.574946" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment25" source="E:\Assignment\Assignment25.robot">
+<test id="s1-s1-t1" name="Parallel Test 1" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T09:40:55.914593" level="INFO">Running Test 1</msg>
+<arg>Running Test 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T09:40:55.912642" elapsed="0.001951"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:55.909713" elapsed="0.005856"/>
+</test>
+<test id="s1-s1-t2" name="Parallel Test 2" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Running Test 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:55.916546" elapsed="0.000975"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:55.916546" elapsed="0.000975"/>
+</test>
+<test id="s1-s1-t3" name="Parallel Test 3" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T09:40:55.919473" level="INFO">Running Test 3</msg>
+<arg>Running Test 3</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T09:40:55.918498" elapsed="0.000975"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:55.918498" elapsed="0.000975"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:55.616913" elapsed="0.303537"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:55.591540" elapsed="0.329886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment25">Assignment.Assignment25</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:55.569091" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

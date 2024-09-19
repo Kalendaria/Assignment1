@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T10:45:42.682225" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment26" source="e:\Assignment\Assignment26.robot">
+<test id="s1-t1" name="Test Validate User Permissions" line="21">
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-09-19T10:45:42.960410" level="INFO">${user_data} = ['admin']</msg>
+<var>${user_data}</var>
+<arg>${User}</arg>
+<arg>roles</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.960410" elapsed="0.001908"/>
+</kw>
+<kw name="Validate User Permissions">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Validating user permissions for: ${user_data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.966221" elapsed="0.001953"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-09-19T10:45:42.969150" level="INFO">${roles} = ['admin']</msg>
+<var>${roles}</var>
+<arg>${user_data}</arg>
+<arg>roles</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.968174" elapsed="0.001951"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2024-09-19T10:45:42.970125" level="INFO">${access_level} = high</msg>
+<var>${access_level}</var>
+<arg>${user_data}</arg>
+<arg>access_level</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.970125" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>User has the required permissions.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.971141" elapsed="0.000937"/>
+</kw>
+<arg>'${required_role}' in ${roles} and '${required_access}' == '${access_level}'</arg>
+<arg>Log To Console</arg>
+<arg>User has the required permissions.</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>User does not have the required permissions.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-19T10:45:42.971141" elapsed="0.000937"/>
+</kw>
+<arg>admin</arg>
+<arg>high</arg>
+<arg>&amp;{User}</arg>
+<status status="PASS" start="2024-09-19T10:45:42.965246" elapsed="0.006832"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:45:42.958443" elapsed="0.014610"/>
+</test>
+<status status="PASS" start="2024-09-19T10:45:42.686779" elapsed="0.288227"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment26">Assignment26</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

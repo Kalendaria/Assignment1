@@ -1,0 +1,5 @@
+User:
+  roles:
+    - admin
+  access_level: high
+

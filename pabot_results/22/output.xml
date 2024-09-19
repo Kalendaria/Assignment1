@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:57.909761" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment7" source="E:\Assignment\Assignment7.robot">
+<test id="s1-s1-t1" name="Test Read Data" line="6">
+<kw name="Read data from yaml">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${USER['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:58.220129" elapsed="0.000976"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${USER['age']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:58.221105" elapsed="0.000977"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${USER['city']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:58.222082" elapsed="0.000975"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:58.219153" elapsed="0.003904"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:58.218177" elapsed="0.004880"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:57.945874" elapsed="0.278159"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:57.923425" elapsed="0.301585"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment7">Assignment.Assignment7</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:57.902929" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

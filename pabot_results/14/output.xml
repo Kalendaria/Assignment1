@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:54.213443" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment22" source="E:\Assignment\Assignment22.robot">
+<test id="s1-s1-t1" name="Test With Tag 1" line="5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is a smoke test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:54.525765" elapsed="0.000976"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-19T09:40:54.524789" elapsed="0.001952"/>
+</test>
+<test id="s1-s1-t2" name="Test With Tag 2" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is a regression test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:54.527716" elapsed="0.000000"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-09-19T09:40:54.526741" elapsed="0.001950"/>
+</test>
+<test id="s1-s1-t3" name="Test With Multiple Tags" line="11">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is a smoke and critical test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:54.529668" elapsed="0.000977"/>
+</kw>
+<tag>critical</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-19T09:40:54.528691" elapsed="0.001954"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:54.249555" elapsed="0.282065"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:54.228084" elapsed="0.303536"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">critical</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Assignment22">Assignment.Assignment22</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:54.206610" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

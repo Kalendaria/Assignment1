@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:53.010953" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment17" source="E:\Assignment\Assignment17.robot">
+<test id="s1-s1-t1" name="Example Test With Setup And Teardown" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-19T09:40:53.346626" level="INFO">Opening browser 'chrome' to base url 'http://example.com'.</msg>
+<arg>http://example.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-19T09:40:53.345651" elapsed="3.095053"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Test is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:56.440704" elapsed="0.000974"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-19T09:40:56.441678" elapsed="2.173730"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:53.343699" elapsed="5.271709"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:53.049992" elapsed="5.565416"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:53.026568" elapsed="5.589816"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment17">Assignment.Assignment17</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:53.004121" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

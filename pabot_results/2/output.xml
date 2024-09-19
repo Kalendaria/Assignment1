@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:50.740356" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment11" source="E:\Assignment\Assignment11.robot">
+<test id="s1-s1-t1" name="Create User Info Test Case" line="5">
+<kw name="Create User Info">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-19T09:40:51.094182" level="INFO">${user_info} = {'name': 'John', 'age': '30', 'city': 'Bangkok'}</msg>
+<var>${user_info}</var>
+<arg>name=John</arg>
+<arg>age=30</arg>
+<arg>city=Bangkok</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.093205" elapsed="0.000977"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-19T09:40:51.095159" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${user_info}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.094182" elapsed="0.000977"/>
+</kw>
+<msg time="2024-09-19T09:40:51.095159" level="INFO">&amp;{user} = { name=John | age=30 | city=Bangkok }</msg>
+<var>&amp;{user}</var>
+<status status="PASS" start="2024-09-19T09:40:51.092229" elapsed="0.002930"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Name: ${user.name} age: ${user.age}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:51.096133" elapsed="0.000976"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:51.091254" elapsed="0.005855"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:50.779397" elapsed="0.318688"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:50.755972" elapsed="0.343089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment11">Assignment.Assignment11</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:50.734500" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

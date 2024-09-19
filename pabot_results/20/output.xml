@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:56.917675" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment5" source="E:\Assignment\Assignment5.robot">
+<test id="s1-s1-t1" name="Print All Items Test Case" line="8">
+<kw name="Print All Items">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:57.247057" elapsed="0.000000"/>
+</kw>
+<var name="${item}">apple</var>
+<status status="PASS" start="2024-09-19T09:40:57.246082" elapsed="0.000975"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:57.248034" elapsed="0.000000"/>
+</kw>
+<var name="${item}">banana</var>
+<status status="PASS" start="2024-09-19T09:40:57.247057" elapsed="0.000977"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:57.248034" elapsed="0.000975"/>
+</kw>
+<var name="${item}">cherry</var>
+<status status="PASS" start="2024-09-19T09:40:57.248034" elapsed="0.000975"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:57.249009" elapsed="0.000000"/>
+</kw>
+<var name="${item}">orange</var>
+<status status="PASS" start="2024-09-19T09:40:57.249009" elapsed="0.000977"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:57.249986" elapsed="0.000000"/>
+</kw>
+<var name="${item}">grape</var>
+<status status="PASS" start="2024-09-19T09:40:57.249986" elapsed="0.000000"/>
+</iter>
+<var>${item}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-09-19T09:40:57.245108" elapsed="0.004878"/>
+</for>
+<arg>@{item}</arg>
+<status status="PASS" start="2024-09-19T09:40:57.244130" elapsed="0.005856"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:57.243154" elapsed="0.007808"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:56.954764" elapsed="0.296198"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:56.931340" elapsed="0.320598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment5">Assignment.Assignment5</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:56.907915" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.4 on win32)" generated="2024-09-19T09:40:51.880409" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="E:\Assignment">
+<suite id="s1-s1" name="Assignment15" source="E:\Assignment\Assignment15.robot">
+<test id="s1-s1-t1" name="Error Handling Example" line="5">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-19T09:40:52.218106" level="INFO">Clicking element 'invalid_locator'.</msg>
+<msg time="2024-09-19T09:40:52.218106" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-19T09:40:52.219080" level="FAIL">No browser is open.</msg>
+<arg>invalid_locator</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-19T09:40:52.217131" elapsed="0.091741">No browser is open.</status>
+</kw>
+<msg time="2024-09-19T09:40:52.309848" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>Click Element</arg>
+<arg>invalid_locator</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-19T09:40:52.216154" elapsed="0.093694"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Status: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:52.309848" elapsed="0.000977"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-19T09:40:52.312777" level="INFO">Typing text 'value' into text field 'invalid_locator'.</msg>
+<msg time="2024-09-19T09:40:52.312777" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-19T09:40:52.313754" level="FAIL">No browser is open.</msg>
+<arg>invalid_locator</arg>
+<arg>value</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-19T09:40:52.311800" elapsed="0.018545">No browser is open.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>invalid_locator</arg>
+<arg>value</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-09-19T09:40:52.310825" elapsed="0.019520"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Ignored the error and continued</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-19T09:40:52.331320" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T09:40:52.215179" elapsed="0.116141"/>
+</test>
+<status status="PASS" start="2024-09-19T09:40:51.922376" elapsed="0.409922"/>
+</suite>
+<status status="PASS" start="2024-09-19T09:40:51.897001" elapsed="0.437248"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Assignment15">Assignment.Assignment15</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-19T09:40:51.872600" level="WARN">Error in file 'E:\Assignment\Assignment9.robot' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
